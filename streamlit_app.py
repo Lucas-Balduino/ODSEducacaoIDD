@@ -27,13 +27,9 @@ def load_data():
 
 df = load_data()
 
-st.title("ODS — Educação de Qualidade: Índice de Desenvolvimento Docente (IDD)")
-st.markdown(
-    """
-Este app explora o dataset **IDD 2023**.
-Tema central: **Qualidade da docência no ensino superior** medida pelo IDD —
-visualize distribuições, compare por estado/área e identifique cursos/IES com maiores desafios.
-""")
+st.title("ODS 4: Educação de Qualidade — Indicador de Diferença entre os Desempenhos Observado e Esperado (IDD)")
+st.markdown("""Este app explora o dataset **IDD 2023**.""")
+st.markdown("**O que é:** mede o valor agregado pelo curso ao desempenho dos concluintes (comparação Enade × Enem). Escala contínua: 0–5; faixas: 1–5.")
 
 # Sidebar filtros
 st.sidebar.header("Filtros")
