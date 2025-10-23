@@ -1,6 +1,6 @@
 # Projeto: ODS — Educação de Qualidade (IDD 2023)
 
-Este repositório contém um app Streamlit para explorar o dataset **IDD 2023**. O foco é analisar a **qualidade da docência** (IDD) por curso, IES e UF.
+Este repositório contém um app Streamlit para explorar o dataset **IDD 2023** do INEP ('https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais/indicadores-de-qualidade-da-educacao-superior'). O foco é analisar a **qualidade da docência** (IDD) por curso, IES e UF.
 
 ## Estrutura (atualizada)
 ```

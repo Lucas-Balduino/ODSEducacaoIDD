@@ -72,12 +72,12 @@ col2.metric("Média IDD (contínuo)", round(df_f['IDD_Contínuo'].dropna().mean(
 col3.metric("Mediana IDD", round(df_f['IDD_Contínuo'].dropna().median(), 3) if 'IDD_Contínuo' in df_f.columns else "N/D")
 col4.metric("Total de Concluintes (inscritos)", int(df_f['Nº_de_Concluintes_Inscritos'].sum()) if 'Nº_de_Concluintes_Inscritos' in df_f.columns else "N/D")
 
-st.markdown("## Distribuição do IDD")
-if 'IDD_Contínuo' in df_f.columns:
-    fig = px.histogram(df_f, x='IDD_Contínuo', nbins=40, title="Histograma do IDD (contínuo)")
-    st.plotly_chart(fig, use_container_width=True)
-else:
-    st.write("Coluna IDD_Contínuo ausente no dataset.")
+# st.markdown("## Distribuição do IDD")
+# if 'IDD_Contínuo' in df_f.columns:
+#     fig = px.histogram(df_f, x='IDD_Contínuo', nbins=40, title="Histograma do IDD (contínuo)")
+#     st.plotly_chart(fig, use_container_width=True)
+# else:
+#     st.write("Coluna IDD_Contínuo ausente no dataset.")
 
 st.markdown("## IDD por UF (média)")
 if 'Sigla_da_UF' in df_f.columns and 'IDD_Contínuo' in df_f.columns:
